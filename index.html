@@ -8,7 +8,8 @@
   </head>
   <body>
     <div class="options-container" id="options-container">
-      <label for="range">Grid size:</label> <br />
+      <label for="range">Grid size: <span id="grid-size-text"></span></label>
+      <br />
       <input
         type="range"
         class="grid-size"
@@ -27,6 +28,7 @@
         id="single"
         name="brush-mode"
         value="single"
+        checked
       />
       <label for="single">Single Color</label>
       <br />
@@ -51,7 +53,8 @@
       <label for="single">Erase</label>
       <br />
 
-      <label for="color-picker">Brush color:</label> <br />
+      <label for="color-picker" id="color-picker-label">Brush color:</label>
+      <br />
       <input
         type="color"
         class="color-picker"
