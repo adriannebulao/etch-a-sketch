@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .grid-container {
@@ -29,4 +30,14 @@ body {
   content: "";
   display: block;
   padding-top: 100%;
+}
+
+.grid-size,
+#erase,
+.color-picker {
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0;
 }

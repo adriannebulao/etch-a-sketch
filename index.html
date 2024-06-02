@@ -7,6 +7,61 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="options-container" id="options-container">
+      <label for="range">Grid size:</label> <br />
+      <input
+        type="range"
+        class="grid-size"
+        id="grid-size"
+        min="1"
+        max="100"
+        value="16"
+        name="grid-size"
+      />
+      <br />
+
+      <p>Select brush mode:</p>
+      <input
+        type="radio"
+        class="brush-mode"
+        id="single"
+        name="brush-mode"
+        value="single"
+      />
+      <label for="single">Single Color</label>
+      <br />
+
+      <input
+        type="radio"
+        class="brush-mode"
+        id="rainbow"
+        name="brush-mode"
+        value="rainbow"
+      />
+      <label for="single">Rainbow</label>
+      <br />
+
+      <input
+        type="radio"
+        class="brush-mode"
+        id="erase"
+        name="brush-mode"
+        value="erase"
+      />
+      <label for="single">Erase</label>
+      <br />
+
+      <label for="color-picker">Brush color:</label> <br />
+      <input
+        type="color"
+        class="color-picker"
+        id="color-picker"
+        name="color-picker"
+      />
+      <br />
+
+      <button class="clear-canvas" id="clear-canvas">Clear Canvas</button>
+    </div>
     <div class="grid-container" id="grid-container"></div>
     <script src="./script.js" async></script>
   </body>
