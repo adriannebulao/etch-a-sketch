@@ -1,0 +1,21 @@
+.grid-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  flex-wrap: wrap;
+}
+
+.square {
+  flex-basis: calc(6.25% - 5px);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+}
+
+.square::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
